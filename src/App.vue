@@ -4,9 +4,8 @@
     <div>
        导航:
        <router-link to="/">首页</router-link>|
-       <router-link to="/hi">Hi页面</router-link>|
-       <router-link :to="{name:'hi1',params:{username:'guosh',id:'888888'}}">Hi1页面</router-link>|
-       <router-link to="/hi/hi2">Hi2页面</router-link>
+       <router-link to="/params/8888/今日头条">Url传值</router-link>|
+  
     </div>
     <p>{{$route.name}}</p>
     <router-view/>
