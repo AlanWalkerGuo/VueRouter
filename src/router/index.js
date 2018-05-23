@@ -16,12 +16,12 @@ export default new Router({
     },
     {
       path: '/hi',
-      name: 'Hi',
+      //name: 'Hi',如果有子路由这不起作用
       component: Hi,
       children:[
-        {path:'/',component:Hi},
-        {path:'hi1',component:Hi1},
-        {path:'hi2',component:Hi2}
+        {path:'/',name:'/Hi',component:Hi},
+        {path:'hi1',name:'hi1',component:Hi1},
+        {path:'hi2',name:'/Hi/Hi2',component:Hi2}
       ]
       
     }
